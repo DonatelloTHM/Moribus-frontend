@@ -1,0 +1,57 @@
+.ask-login {
+  height: 120px;
+  width: 250px;
+  position: absolute;
+  padding: 20px;
+  bottom: 90px;
+  right: 0px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 2.3px 8px rgba(0, 0, 0, 0.018),
+    0 5.4px 18.6px rgba(0, 0, 0, 0.026), 0 9.7px 33.4px rgba(0, 0, 0, 0.032),
+    0 16.1px 55.4px rgba(0, 0, 0, 0.038), 0 26.5px 91.3px rgba(0, 0, 0, 0.044),
+    0 46.2px 159.5px rgba(0, 0, 0, 0.052), 0 100px 345px rgba(0, 0, 0, 0.07);
+  form {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    width: 100%;
+  }
+
+  a:nth-child(1) {
+    button:nth-child(1) {
+      background-color: rgb(0, 195, 255);
+      color: white;
+    }
+    button:hover {
+      background-color: #ffd36b;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    padding: 14px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: rgb(46, 46, 46);
+    font-weight: 400;
+    background-color: #838383;
+    border-radius: 40px;
+    color: white;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+
+  button:hover {
+    background-color: #ffd36b;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}

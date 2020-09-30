@@ -1,0 +1,110 @@
+.sighting-form {
+  position: absolute;
+  right: -100px;
+  bottom: 220px;
+  height: 650px;
+  width: 630px;
+  z-index: 10000;
+  background-color: white;
+  border-radius: 30px 30px 30px 0px;
+  box-shadow: 0 2.3px 8px rgba(0, 0, 0, 0.018),
+    0 5.4px 18.6px rgba(0, 0, 0, 0.026), 0 9.7px 33.4px rgba(0, 0, 0, 0.032),
+    0 16.1px 55.4px rgba(0, 0, 0, 0.038), 0 26.5px 91.3px rgba(0, 0, 0, 0.044),
+    0 46.2px 159.5px rgba(0, 0, 0, 0.052), 0 100px 345px rgba(0, 0, 0, 0.07);
+
+  img {
+    height: 40%;
+    border-radius: 30px 30px 10px 10px;
+    width: 100%;
+    margin-bottom: -6px;
+    object-fit: cover;
+    margin-bottom: 3px;
+    object-position: 50% 40%;
+  }
+  h1 {
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    display: flex;
+    span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      align-self: center;
+      padding: 0px 20px;
+      margin-left: 20px;
+      border-radius: 20px;
+    }
+  }
+
+  .high-danger {
+    background-color: #dd2c00;
+    color: white;
+  }
+
+  .considerable-danger {
+    background-color: #ff9234;
+    color: white;
+  }
+
+  .moderate-danger {
+    background-color: #fbd46d;
+    color: rgb(94, 80, 0);
+  }
+
+  .minor-danger {
+    background-color: #519872;
+    color: white;
+  }
+}
+
+.resource-form {
+  text-align: left;
+  height: 45%;
+  padding: 27px 40px;
+  overflow-y: auto;
+
+  p {
+    font-family: "Merriweather", serif;
+    line-height: 23px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  //   h2 {
+  //     font-family: "Roboto", sans-serif;
+  //     color: rgb(151, 151, 151);
+  //     margin: 0;
+  //     font-weight: 400;
+  //     line-height: 23px;
+  //     padding-right: 2px;
+  //     margin-bottom: 5px;
+  //   }
+
+  h2 {
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 94, 0);
+  }
+  ul {
+    font-family: "Merriweather", serif;
+    line-height: 23px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: rgb(243, 243, 243);
+    width: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+.submit-animal {
+  select {
+    outline: none;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding: 10px 10px;
+    width: 80%;
+    margin-bottom: 30px;
+    border-radius: 30px 0px 0px 30px;
+    text-align: center;
+  }
+
+  input {
+    padding: 11.2px 20px;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #ffd36b;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 0px 30px 30px 0px;
+  }
+
+  input:hover {
+    background-color: #fdba2b;
+  }
+
+  input:active {
+    background-color: #e1fc49;
+  }
+}

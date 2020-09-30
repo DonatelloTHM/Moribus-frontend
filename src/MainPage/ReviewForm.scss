@@ -1,0 +1,56 @@
+.review-div {
+  form {
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(243, 243, 243);
+  }
+
+  .review-title {
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+
+  .rating {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .rating-submit {
+    justify-content: space-between;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .review-submit {
+    background-color: #ffd36b;
+    outline: none;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(31, 31, 31);
+
+    font-size: 15px;
+    padding: 10px 16px;
+    border-radius: 10px;
+  }
+
+  textarea {
+    font-family: "Open sans", sans-serif;
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+  }
+}

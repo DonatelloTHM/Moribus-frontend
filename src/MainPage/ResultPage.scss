@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap");
+
+.result-page {
+  box-shadow: none;
+  height: 650px;
+  position: relative;
+
+  .overall-rating {
+    margin-bottom: 27px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  h1 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  img {
+    height: 40%;
+    border-radius: 30px 30px 10px 10px;
+    width: 100%;
+    margin-bottom: -6px;
+    object-fit: cover;
+  }
+
+  h5 {
+    position: absolute;
+    background-color: rgb(245, 90, 0);
+    color: white;
+    right: 30px;
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    top: 0px;
+  }
+}
+
+.pop-up-div {
+  height: 650px;
+}
+
+.result-page-info {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 53%;
+  width: 550px;
+  margin: 0;
+  padding: 30px;
+  text-align: left;
+  &::-webkit-scrollbar {
+    background-color: rgb(243, 243, 243);
+    width: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+  }
+  p {
+    font-family: "Merriweather", serif;
+    line-height: 23px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    color: rgb(151, 151, 151);
+    margin: 0;
+    font-weight: 400;
+    line-height: 23px;
+    padding-right: 2px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 94, 0);
+  }
+  ul {
+    margin-top: 20px;
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    width: 42%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    padding: 4px 30px;
+  }
+
+  span {
+    font-family: "Roboto", sans-serif;
+    color: rgb(138, 138, 138);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  li span:first-child {
+    color: rgb(27, 27, 27);
+    font-weight: 500;
+  }
+
+  li:nth-child(odd) {
+    background-color: rgb(243, 243, 243);
+    border-radius: 30px;
+  }
+  a {
+    padding-top: 15px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    color: rgb(141, 141, 141);
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  #reviews {
+    margin-top: 20px;
+  }
+
+  .user_reviews {
+    background-color: rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+
+    .individual-review {
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(233, 233, 233);
+    }
+    .individual-review1:hover {
+      background-color: rgb(238, 238, 238);
+    }
+
+    .individual-review1:hover .delete-review {
+      opacity: 1;
+    }
+    .delete-review {
+      opacity: 0;
+      transition: 0.5s ease;
+      margin-left: 20px;
+      cursor: pointer;
+      //   margin-right: 20px;
+    }
+
+    .individual-review1 {
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      transition: 0.5s ease;
+    }
+    h1 {
+      font-size: 20px;
+      font-family: "Robto", sans-serif;
+      margin: 0px;
+
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      font-family: "PT Serif", serif;
+      font-size: 16px;
+      color: rgb(61, 61, 61);
+    }
+  }
+
+  .active-user {
+    background-color: red;
+  }
+  .rating-result {
+    margin-left: auto;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .review-header {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+
+    .reviewer-photo {
+      height: 42px;
+      width: 42px;
+      object-fit: cover;
+      border-radius: 50%;
+      align-self: center;
+      margin: 0px;
+    }
+
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 10px;
+  }
+
+  .review-username {
+    margin-left: 10px;
+    h4 {
+      margin: 0;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      color: rgb(187, 77, 25);
+    }
+    h6 {
+      margin: 0;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: rgb(122, 122, 122);
+    }
+  }
+
+  .review-body {
+    padding: 12px 30px;
+  }
+}
