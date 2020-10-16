@@ -24,14 +24,15 @@ function Sighting() {
     (state) => state.selectedAnimal.selectedAnimal
   );
 
+  const selector = useSelector((state) => state.animalResourceSelector);
   const selectedResource = useSelector(
     (state) => state.selectedResource.selectedResource
   );
 
-  const [selector, setSelector] = useState({
-    animal: false,
-    resource: false,
-  });
+  // const [selector, setSelector] = useState({
+  //   animal: false,
+  //   resource: false,
+  // });
 
   const setUserLocation = () => {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -63,7 +64,11 @@ function Sighting() {
   };
 
   const handleAnimalSelector = () => {
-    setSelector({ ...selector, animal: !selector.animal, resource: false });
+    // setSelector({ ...selector, animal: !selector.animal, resource: false });
+    dispatch({
+      type: "SET_ANIMAL_RESOURCE_SELECTOR",
+      payload: { animal: !selector.animal, resource: false },
+    });
     dispatch({ type: "SET_SELECTED_ANIMAL", payload: "" });
     dispatch({ type: "SET_CLOSE_RESULTS", payload: true });
     dispatch({ type: "SET_SELECTED_RESOURCE", payload: "" });
@@ -77,7 +82,11 @@ function Sighting() {
   };
 
   const handleResourceSelector = () => {
-    setSelector({ ...selector, animal: false, resource: !selector.resource });
+    dispatch({
+      type: "SET_ANIMAL_RESOURCE_SELECTOR",
+      payload: { animal: false, resource: !selector.resource },
+    });
+    // setSelector({ ...selector, animal: false, resource: !selector.resource });
     dispatch({ type: "SET_SELECTED_RESOURCE", payload: "" });
     dispatch({ type: "SET_SELECTED_ANIMAL", payload: "" });
     dispatch({ type: "SET_CLOSE_RESULTS", payload: true });
@@ -93,11 +102,13 @@ function Sighting() {
   const handleAnimalClick = (e) => {
     setUserLocation();
     dispatch({ type: "SET_SELECTED_ANIMAL", payload: e.target.id });
+    dispatch({ type: "SET_SELECTED_PARK", payload: {} });
   };
 
   const handleResourceClick = (e) => {
     setUserLocation();
     dispatch({ type: "SET_SELECTED_RESOURCE", payload: e.target.id });
+    dispatch({ type: "SET_SELECTED_PARK", payload: {} });
   };
 
   return (

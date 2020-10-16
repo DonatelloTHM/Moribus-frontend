@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sweetalert/with-react": "^0.1.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -23,6 +24,7 @@
     "react-scripts": "3.4.3",
     "react-toggle": "^4.1.1",
     "redux": "^4.0.5",
+    "sweetalert": "^2.1.2",
     "us-state-converter": "^1.0.5"
   },
   "scripts": {

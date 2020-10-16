@@ -7,6 +7,7 @@ import { ReactComponent as MoribusABS } from "./moribusabs.svg";
 
 function NavBar() {
   const userToken = useSelector((state) => state.userInformation.token);
+  const profilePic = useSelector((state) => state.userInformation.photo);
   const dispatch = useDispatch();
   const history = useHistory();
   const location = useLocation();
@@ -48,7 +49,7 @@ function NavBar() {
         exact={true}
         activeClassName="link-active"
         className="link-navbar"
-        to="/"
+        to="/about"
       >
         About
       </NavLink>
@@ -75,6 +76,11 @@ function NavBar() {
           Logout
         </h1>
       )}
+      {userToken ? (
+        <NavLink to="/profile">
+          <img src={profilePic} alt="profile" />
+        </NavLink>
+      ) : null}
     </div>
   );
 }

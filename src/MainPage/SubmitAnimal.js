@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./SubmitAnimal.scss";
 import { useDispatch, useSelector } from "react-redux";
+import swal from "sweetalert";
 
 export default function SubmitAnimal() {
   const markerPosition = useSelector((state) => state.markerPosition);
@@ -26,6 +27,10 @@ export default function SubmitAnimal() {
       park: parkSelected,
     };
     dispatch({ type: "SET_SELECTED_ANIMAL", payload: "" });
+    dispatch({
+      type: "SET_ANIMAL_RESOURCE_SELECTOR",
+      payload: { animal: false, resource: false },
+    });
 
     fetch("http://localhost:3000/animal_sightings", {
       method: "POST",
@@ -39,6 +44,12 @@ export default function SubmitAnimal() {
       .then((response) => response.json())
       .then((result) => {
         dispatch({ type: "ADD_ANIMAL_SIGHTINGS", payload: result });
+        swal({
+          title: "Success!",
+          text: "Your animal sighting submission was succesful!",
+          icon: "success",
+          button: "OK!",
+        });
       });
   };
 

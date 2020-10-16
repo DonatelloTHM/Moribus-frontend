@@ -7,6 +7,14 @@ function Result({ parkObj }) {
   const dispatch = useDispatch();
 
   const handleHover = () => {
+    dispatch({
+      type: "SET_ANIMAL_RESOURCE_SELECTOR",
+      payload: { animal: false, resource: false },
+    });
+
+    dispatch({ type: "SET_SELECTED_ANIMAL", payload: "" });
+    dispatch({ type: "SET_SELECTED_RESOURCE", payload: "" });
+
     const newViewport = {
       latitude: parkObj.latitude,
       longitude: parkObj.longitude,

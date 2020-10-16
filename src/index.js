@@ -20,6 +20,11 @@ const userInitialState = {
   photo: "",
 };
 
+const animalResourceSelector = {
+  animal: false,
+  resource: false,
+};
+
 const rangeFilter = {
   rangeFilter: 0,
 };
@@ -110,6 +115,20 @@ const ratingFilterReducer = (state = ratingFilter, action) => {
       return {
         ...state,
         ratingFilter: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+const animalResourceReducer = (state = animalResourceSelector, action) => {
+  switch (action.type) {
+    case "SET_ANIMAL_RESOURCE_SELECTOR":
+      debugger;
+      const { animal, resource } = action.payload;
+      return {
+        ...state,
+        animal: animal,
+        resource: resource,
       };
     default:
       return state;
@@ -434,6 +453,7 @@ const userReducer = (state = userInitialState, action) => {
         city: "",
         us_state: "",
         zipcode: 0,
+        username: "",
         token: "",
       };
     default:
@@ -462,6 +482,7 @@ const rootReducer = combineReducers({
   closeResults: closeResultsReducer,
   ratingFilter: ratingFilterReducer,
   rangeFilter: rangeFilterReducer,
+  animalResourceSelector: animalResourceReducer,
 });
 const storeObject = createStore(
   rootReducer,

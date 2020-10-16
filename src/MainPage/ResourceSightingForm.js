@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./ResourceSightingForm.scss";
+import swal from "sweetalert";
 
 const ResourceSightingForm = () => {
   const markerPosition = useSelector((state) => state.markerPosition);
@@ -37,8 +38,18 @@ const ResourceSightingForm = () => {
     })
       .then((response) => response.json())
       .then((result) => {
-        debugger;
+        dispatch({ type: "SET_SELECTED_RESOURCE", payload: "" });
         dispatch({ type: "ADD_RESOURCE_SIGHTINGS", payload: result });
+        dispatch({
+          type: "SET_ANIMAL_RESOURCE_SELECTOR",
+          payload: { animal: false, resource: false },
+        });
+        swal({
+          title: "Success!",
+          text: "Your resource sighting submission was succesful!",
+          icon: "success",
+          button: "OK!",
+        });
       });
   };
 

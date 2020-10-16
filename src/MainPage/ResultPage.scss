@@ -135,6 +135,7 @@
 
   #reviews {
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .user_reviews {
@@ -162,6 +163,7 @@
       opacity: 0;
       transition: 0.5s ease;
       margin-left: 20px;
+      margin-right: -20px;
       cursor: pointer;
       //   margin-right: 20px;
     }
@@ -199,6 +201,10 @@
       width: 20px;
       height: 20px;
     }
+  }
+
+  .review-content {
+    white-space: pre-line;
   }
   .review-header {
     padding: 10px 15px;
@@ -238,4 +244,50 @@
   .review-body {
     padding: 12px 30px;
   }
+}
+
+.swing-in-top-bck {
+  -webkit-animation: swing-in-top-bck 0.6s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+.no-reviews {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  color: rgb(185, 185, 185);
 }

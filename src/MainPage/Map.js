@@ -28,6 +28,8 @@ import ResultPage from "./ResultPage";
 import { DraggableControl } from "react-map-gl";
 import AnimalPopup from "./AnimalPopup";
 import { ResourcePopup } from "./ResourcePopup";
+import swal from 'sweetalert';
+
 
 const circleToPolygon = require("circle-to-polygon");
 

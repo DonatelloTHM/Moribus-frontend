@@ -74,14 +74,7 @@ function Register(props) {
     <div className="register slide-in-fwd-center">
       <div className="image-form-container">
         <div className="sidepic scale-in-hor-right">
-          <img
-            src={
-              resourceURL
-                ? resourceURL
-                : "https://d3q6qq2zt8nhwv.cloudfront.net/userprofile/dedff135ffb8435394c0c2d647ca99cd.jpg"
-            }
-            alt="resource"
-          />
+          {resourceURL ? <img src={resourceURL} alt="resource" /> : null}
         </div>
         <form onSubmit={handleRegister}>
           <div className="register-user">

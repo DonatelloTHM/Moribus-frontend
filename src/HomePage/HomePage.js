@@ -11,7 +11,7 @@ function HomePage() {
         {/* <MoribusLogo /> */}
       </div>
       <h2>
-        Look deep into nature, and then you will understand everything better
+        Tell me, what is it you plan to do with your one wild and precious life?
       </h2>
       <SearchBar />
     </div>
