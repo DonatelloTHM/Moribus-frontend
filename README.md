@@ -12,6 +12,7 @@ Moribus is an outdoors adventure app that helps the user find their next camping
 * [Tech Stack](#tech-stack)
 * [Tools](#tools)
 
+![Moribus](https://i.ibb.co/FbxLjQQ/Screen-Shot-2020-12-12-at-12-00-12-PM.png)
 ![Moribus](https://i.ibb.co/f9GmtdJ/Screen-Shot-2020-12-12-at-12-02-41-PM.png)
 
 <a name="getting-started"/>
@@ -58,8 +59,8 @@ Moribus is an outdoors adventure app that helps the user find their next camping
 * Show the closest resource at all times.
 
 ### Auth Features
-![Auth Features](https://i.ibb.co/nQDv7RK/logingif.gif)
-![Auth Features](https://i.ibb.co/7z7Ngrs/registrationgif.gif)
+![Auth Features](https://i.ibb.co/dg5KX9n/Screen-Shot-2020-12-12-at-12-07-29-PM.png)
+![Auth Features](https://i.ibb.co/L9mDtYy/Screen-Shot-2020-12-12-at-2-37-36-PM.png)
 * Secure login and registration courtesy of JWT Auth, BCrypt.
 
 <a name="tech-stack"/>
