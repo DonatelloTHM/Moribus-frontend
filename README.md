@@ -1,68 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Moribus
+[Video Demo](https://www.youtube.com/watch?v=L3hNJs0F3eU)
 
-## Available Scripts
+Moribus is an outdoors adventure app that helps the user find their next camping destination. Once there, it assists with the navigation of common difficulties involved with being in the wilderness.
 
-In the project directory, you can run:
+[Link to Backend API](https://github.com/DonatelloTHM/Moribus-backend/)
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
+* [Getting Started](#getting-started)
+* [Features](#features)
+* [Tech Stack](#tech-stack)
+* [Tools](#tools)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Moribus](https://i.ibb.co/f9GmtdJ/Screen-Shot-2020-12-12-at-12-02-41-PM.png)
 
-### `yarn test`
+<a name="getting-started"/>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+1. Install [Rails Backend API](https://github.com/DonatelloTHM/Moribus-backend/)
+2. Install [Node.js and npm](https://www.npmjs.com/get-npm)
 
-### `yarn build`
+    ```$ brew install node```
+    
+3. Clone this repo and cd into the directory
+4. Install all dependencies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```$ npm install```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+5. Make sure the Rails server is running and then run the app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```$ npm start```
+    
+<a name="features"/>
 
-### `yarn eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Search National Parks
+![Search National Parks](https://i.ibb.co/9tW33tV/Screen-Shot-2020-12-12-at-12-52-06-PM.png)
+* Search among 423 national parks that are sorted by distance relative to the user's location.
+* See the most recent informations about a park, courtesy of NPS API
+* Filter and sort the parks by different attributes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Review A Park
+![Review A Park](https://i.ibb.co/DG8nZHs/leavereview.gif)
+* Add a review about your experience at a national park.
+* Give a rating to a park.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Add Animal Sightings
+![Add Animal Sightings](https://i.ibb.co/k1CHhVF/Screen-Shot-2020-12-12-at-1-07-01-PM.png)
+* Add animal sightings when you spot a dangerous animal.
+* Alert a user when entering the territory of a dangerous animal.
+* Show information about a dangerous animal.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Add Resource Sightings
+![Bookmark Establishments](https://i.ibb.co/fpvyyh9/addresource.gif)
+* Add sightings for essential resources during camping or hiking.
+* Show the closest resource at all times.
 
-## Learn More
+### Auth Features
+![Auth Features](https://i.ibb.co/nQDv7RK/logingif.gif)
+![Auth Features](https://i.ibb.co/7z7Ngrs/registrationgif.gif)
+* Secure login and registration courtesy of JWT Auth, BCrypt.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a name="tech-stack"/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech Stack
+* React.js
+* Redux
+* Ruby on Rails API (Backend: https://github.com/DonatelloTHM/Moribus-backend/)
+* PostgreSQL
+* PostGIS
+* Mapbox
+* RGeo
+* HTML
+* SASS/SCSS
+* Geolocation API
+* Active Record
 
-### Code Splitting
+<a name="tools"/>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Tools
+* [Rack CORS](https://github.com/cyu/rack-cors)
+* [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
+* [BCrypt](https://github.com/codahale/bcrypt-ruby)
+* [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+* [JWT](https://github.com/jwt/ruby-jwt)
+* [RGeo](https://github.com/rgeo/rgeo)
+* [Urbica React Map GL](https://github.com/urbica/react-map-gl)
+* [React Rating](https://www.npmjs.com/package/react-rating)
+* [Cloudinary](https://cloudinary.com/documentation/rails_integration)
+* [Sweetalert 2](https://sweetalert2.github.io/)
+* [Alchemist](https://github.com/halogenandtoast/alchemist)
+* [Luxon](https://moment.github.io/luxon/)
