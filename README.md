@@ -13,7 +13,7 @@ Moribus is an outdoors adventure app that helps the user find their next camping
 * [Tools](#tools)
 
 ![Moribus](https://i.ibb.co/FbxLjQQ/Screen-Shot-2020-12-12-at-12-00-12-PM.png)
-![Moribus](https://i.ibb.co/f9GmtdJ/Screen-Shot-2020-12-12-at-12-02-41-PM.png)
+![Moribus](https://i.ibb.co/MkMzLFD/moribusfrontend.png)
 
 <a name="getting-started"/>
 
